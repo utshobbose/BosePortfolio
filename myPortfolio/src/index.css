@@ -1,8 +1,18 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+.font-comic {
+  font-family: 'Comic Neue', cursive;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .font-comic {
   font-family: 'Comic Neue', cursive;
