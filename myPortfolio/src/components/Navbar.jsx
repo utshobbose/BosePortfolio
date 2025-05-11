@@ -1,20 +1,47 @@
+// export default function Navbar() {
+//     return (
+//     <nav className="w-full flex justify-between items-center px-8 py-4 text-sm border-b">
+//         {/* Left: Logo/Name */}
+//         <div className="font-medium">Utshob Bose</div>
+
+//         {/* Center: Nav Links */}
+//         <ul className="flex justify-center space-x-8 list-none p-0 m-0">
+//             <li><a href="#" className="hover:underline">About</a></li>
+//             <li><a href="#" className="hover:underline">Work</a></li>
+//             <li><a href="#" className="hover:underline">Process</a></li>
+//             <li><a href="#" className="hover:underline">Drop me a line</a></li>
+//         </ul>
+
+//         {/* Right: Theme Toggle Placeholder */}
+//         <div className="text-xs flex items-center gap-1">
+//         <span>☀️</span>
+//         <span>Light</span>
+//         </div>
+//     </nav>
+//     );
+// }
 export default function Navbar() {
-return (
-<nav className="border-4 border-black bg-white px-6 py-4 flex justify-between items-center font-comic">
-    <div className="text-xl font-bold">🧩 WEBSITE LOGO</div>
-    <ul className="flex gap-6 items-center">
-    <li><a href="#" className="hover:underline">About</a></li>
-    <li><a href="#" className="hover:underline">Blog</a></li>
-    <li className="relative group">
-        <button className="hover:underline">Products ▾</button>
-        <ul className="absolute hidden group-hover:block top-full left-0 bg-white border-2 border-black mt-1">
-        <li className="px-4 py-1 hover:bg-gray-100">Category 1</li>
-        <li className="px-4 py-1 hover:bg-gray-100">Category 2</li>
-        <li className="px-4 py-1 hover:bg-gray-100">Category 3</li>
-        </ul>
-    </li>
-    <li><a href="#" className="hover:underline">Contact</a></li>
-    </ul>
-</nav>
-);
+  return (
+    <nav className="w-full flex justify-between items-center px-8 py-4 text-sm border-b">
+
+      {/* Left: Name */}
+      <div className="font-medium">Utshob Bose</div>
+
+      {/* Center: Nav Links (finally working) */}
+      <div className="flex justify-center flex-1">
+        <div className="flex gap-10">
+          <a href="#" className="text-black hover:underline">About</a>
+          <a href="#" className="text-black hover:underline">Work</a>
+          <a href="#" className="text-black hover:underline">Process</a>
+          <a href="#" className="text-black hover:underline">Drop me a line</a>
+        </div>
+      </div>
+
+      {/* Right: Light Mode */}
+      <div className="text-xs flex items-center gap-1">
+        <span>🌞</span>
+        <span>Light</span>
+      </div>
+    </nav>
+  );
 }
