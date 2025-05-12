@@ -12,7 +12,9 @@ export default function Navbar() {
     <nav className="w-full flex items-center justify-between px-8 py-4 text-sm border-gray-300 dark:border-gray-700">
       
       {/* Left: Name */}
-      <div className="font-medium">Utshob Bose</div>
+      <div>
+        <img src="/BoseinBlack.png" alt="Logo" className="w-12 h-auto max-w-[4rem] object-contain" />
+      </div>
 
       {/* Center: Nav Links */}
       <div className="navbar-links flex justify-center gap-10">
