@@ -1,19 +1,19 @@
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import { useState, useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { NotFound } from "./pages/NotFound";
+import { Toaster } from "@/components/ui/toaster";
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", isDark);
-  }, [isDark]);
-
   return (
-    <div className={`min-h-screen ${isDark ? "bg-black text-white" : "bg-white text-black"}`}>
-      <Navbar toggleTheme={() => setIsDark(!isDark)} isDark={isDark} />
-      <Hero />
-    </div>
+    <>
+      <Toaster />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
