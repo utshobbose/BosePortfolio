@@ -5,8 +5,7 @@ import {
   MapPin,
   Phone,
   Send,
-  Twitch,
-  Twitter,
+  Facebook
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -59,7 +58,7 @@ export const ContactSection = () => {
                     href="mailto:hello@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    boseadidev1@gmail.com
                   </a>
                 </div>
               </div>
@@ -73,7 +72,7 @@ export const ContactSection = () => {
                     href="tel:+11234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +880-1752830344
                   </a>
                 </div>
               </div>
@@ -84,7 +83,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                    Dhaka, Bangladesh
                   </a>
                 </div>
               </div>
@@ -96,14 +95,17 @@ export const ContactSection = () => {
                 <a href="#" target="_blank">
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
+                {/* <a href="#" target="_blank">
                   <Twitter />
-                </a>
-                <a href="#" target="_blank">
+                </a> */}
+                <a href="https://www.instagram.com/nobodyfromfuture" target="_blank">
                   <Instagram />
                 </a>
-                <a href="#" target="_blank">
+                {/* <a href="#" target="_blank">
                   <Twitch />
+                </a> */}
+                <a href="https://www.facebook.com/utshob.bose" target="_blank">
+                  <Facebook />
                 </a>
               </div>
             </div>
@@ -130,7 +132,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Utshob Bose..."
                 />
               </div>
 
