@@ -1,7 +1,7 @@
 
 "use client";
 
-import React from "react";
+// import React from "react";
 import {
   SiNextdotjs,
   SiReact,
@@ -104,7 +104,7 @@ const LinkBox = ({ Icon, href }) => {
       onMouseLeave={handleMouseLeave}
       className="relative grid h-20 w-full place-content-center sm:h-28 md:h-36"
     >
-      <Icon className="text-xl sm:text-3xl lg:text-4xl text-gray-50" />
+      <Icon className="text-xl sm:text-3xl lg:text-4xl text-black-50" />
       <div
         ref={scope}
         style={{ clipPath: BOTTOM_RIGHT_CLIP }}
