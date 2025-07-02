@@ -3,32 +3,32 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "FitTrack ",
+    description: "FitTrack is a full-featured fitness and wellness web application with AI suggestions designed to help users achieve their health goals through personalized plans, intuitive tools, and expert recommendations.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    tags: ["React", "Express", "MongoDB"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/utshobbose/FitTrack",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Car Service Booking System",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "A web-based application that allows car owners to book appointments for car servicing. Users can select a date, choose an available time slot, and select a preferred mechanic. The system ensures that mechanics' availability is managed and appointments are scheduled without conflicts.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: [ "Next.js", "Express", "MongoDB"],
+    demoUrl: "https://car-workshop-eight.vercel.app/",
+    githubUrl: "https://github.com/utshobbose/Car-Workshop",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Throttler",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Throttler merges premium bike shopping with expert on-demand mechanic services, delivering repairs and maintenance to your doorstep. Schedule effortlessly, enjoy transparent pricing, and elevate your ride with seamless convenience. Ride smarter, ride smoother.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["HTML5", "CSS", "PHP", "MySQL"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/utshobbose/Throttler",
   },
 ];
 
