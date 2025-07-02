@@ -12,6 +12,8 @@ import {
   SiTailwindcss,
   SiExpress,
   SiVuedotjs,
+  SiDjango,
+  SiMysql
 } from "react-icons/si";
 import { useAnimate } from "framer-motion";
 
@@ -39,12 +41,12 @@ const ClipPathLinks = () => {
         <LinkBox Icon={SiNodedotjs} href="#" />
         <LinkBox Icon={SiMongodb} href="#" />
         <LinkBox Icon={SiDocker} href="#" />
-        <LinkBox Icon={SiKotlin} href="#" />
+        <LinkBox Icon={SiDjango} href="#" />
       </div>
       <div className="grid grid-cols-3 divide-x divide-indigo-500 animate-glow border">
         <LinkBox Icon={SiTailwindcss} href="#" />
         <LinkBox Icon={SiExpress} href="#" />
-        <LinkBox Icon={SiVuedotjs} href="#" />
+        <LinkBox Icon={SiMysql} href="#" />
       </div>
     </div>
   );
