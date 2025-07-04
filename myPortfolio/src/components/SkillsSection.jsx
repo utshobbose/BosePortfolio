@@ -32,18 +32,18 @@ export const SkillsSection = () => {
 
 const ClipPathLinks = () => {
   return (
-    <div className="divide-y divide-indigo-500 rounded-lg animate-glow border bg-gray-500/5 backdrop-blur-md shadow-lg">
-      <div className="grid grid-cols-2 divide-x divide-indigo-500 rounded-lg animate-glow border-[]">
+    <div className="divide-y  rounded-lg animate-glow border bg-gray-500/5 backdrop-blur-md shadow-lg">
+      <div className="grid grid-cols-2 divide-x divide-blue-300 rounded-lg animate-glow border-[]">
         <LinkBox Icon={SiNextdotjs} href="#" />
         <LinkBox Icon={SiReact} href="#" />
       </div>
-      <div className="grid grid-cols-4 divide-x divide-indigo-500 animate-glow border">
+      <div className="grid grid-cols-4 divide-x divide-blue-300 animate-glow border">
         <LinkBox Icon={SiNodedotjs} href="#" />
         <LinkBox Icon={SiMongodb} href="#" />
         <LinkBox Icon={SiDocker} href="#" />
         <LinkBox Icon={SiDjango} href="#" />
       </div>
-      <div className="grid grid-cols-3 divide-x divide-indigo-500 animate-glow border">
+      <div className="grid grid-cols-3 divide-x divide-blue-300 animate-glow border">
         <LinkBox Icon={SiTailwindcss} href="#" />
         <LinkBox Icon={SiExpress} href="#" />
         <LinkBox Icon={SiMysql} href="#" />
