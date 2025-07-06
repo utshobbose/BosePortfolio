@@ -7,7 +7,8 @@ import { SkillsSection } from "../components/SkillsSection";
 import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
-import {ParticleRing} from "../components/ParticleRing";
+import GradientBackground from "../components/GradientBackground";
+// import {} from "../components/GradientBackground";
 
 export const Home = () => {
   return (
@@ -16,7 +17,8 @@ export const Home = () => {
       <ThemeToggle />
       {/* Background Effects */}
       {/* <StarBackground /> */}
-      <ParticleRing/>
+      {/* <ParticleRing/> */}
+      <GradientBackground />
       {/* Navbar */}
       <Navbar />
       {/* Main Content */}
