@@ -1,14 +1,15 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
-  // {
-  //   id: 1,
-  //   title: "FitTrack ",
-  //   description: "FitTrack is a full-featured fitness and wellness web application with AI suggestions designed to help users achieve their health goals through personalized plans, intuitive tools, and expert recommendations.",
-  //   image: "/projects/project1.png",
-  //   tags: ["React", "Express", "MongoDB"],
-  //   demoUrl: "#",
-  //   githubUrl: "https://github.com/utshobbose/FitTrack",
-  // }
+
 const projects = [
+    {
+    id: 1,
+    title: "FitTrack ",
+    description: "FitTrack is a full-featured fitness and wellness web application with AI suggestions designed to help users achieve their health goals through personalized plans, intuitive tools, and expert recommendations.",
+    image: "/projects/project1.png",
+    tags: ["React", "Express", "MongoDB"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/utshobbose/FitTrack",
+  },
 
   {
     id: 2,
