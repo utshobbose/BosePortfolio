@@ -11,7 +11,7 @@ export const HeroSection = () => {
         <img
           src="images/Utshobportfolio.jpg"
           alt="Utshob Bose"
-          className="w-50 h-50 rounded-full mx-auto border-4  shadow-lg opacity-0 animate-fade-in"
+          className="w-48 h-48 rounded-full mx-auto border-4 shadow-lg object-cover opacity-0 animate-fade-in"
         />
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in"> Hi, I am</span>
