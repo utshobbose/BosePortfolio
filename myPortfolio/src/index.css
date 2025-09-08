@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* -------------------------------
+   THEME TOKENS (Tailwind mapping)
+-------------------------------- */
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
@@ -10,6 +13,12 @@
 
   --color-card: hsl(var(--card));
 
+  /* extra colors used by your classes */
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  /* animations you defined */
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
   --animate-fade-in: fade-in 0.7s ease-out forwards;
@@ -19,151 +28,142 @@
   --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
   --animate-meteor: meteor 5s linear infinite;
 
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-  @keyframes pulse-subtle {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.8;
-    }
-  }
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+  @keyframes pulse-subtle { 0%,100%{opacity:1} 50%{opacity:.8} }
+  @keyframes fade-in { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
   @keyframes meteor {
-    0% {
-      transform: rotate(215deg) translateX(0);
-      opacity: 1;
-    }
-    70% {
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(215deg) translateX(-500px);
-      opacity: 0;
-    }
+    0%{transform:rotate(215deg) translateX(0);opacity:1}
+    70%{opacity:1}
+    100%{transform:rotate(215deg) translateX(-500px);opacity:0}
   }
 }
 
+/* -------------------------------
+   BASE VARIABLES (Light & Dark)
+-------------------------------- */
 @layer base {
   :root {
-    /* --background: 210 40% 98%;
-    --foreground: 222 47% 11%; */
-    
-    --primary: 142 71% 45%;
-    --primary-foreground: 210 40% 98%;
-
-    --card: 0 0% 100%;
+    /* Tailwind semantic tokens (LIGHT) */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
     --primary: 250 47% 60%;
     --primary-foreground: 210 40% 98%;
 
+    --muted-foreground: 225 7% 40%;
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
     --border: 214 32% 91%;
+
+    /* Base gradient palette (LIGHT) */
+    --bg-start: #ffffff;
+    --bg-end:   #f6f2ff;
+    --blob:     rgba(110, 64, 255, 0.18); /* soft purple blobs */
+
+    /* Cursor haze color (LIGHT) – purple */
+    --haze:        rgba(147, 51, 234, 0.16);  /* #9333ea */
+    --haze-mid:    rgba(147, 51, 234, 0.07);
+    --haze-fade:   rgba(147, 51, 234, 0.00);
   }
 
   .dark {
-    /* --background: 222 47% 4%;
-    --foreground: 213 31% 91%; */
-
-    --primary: 142 65% 55%; /* slightly brighter for dark mode */
-    --primary-foreground: 213 31% 91%;
-
-
-    --card: 222 47% 8%;
+    /* Tailwind semantic tokens (DARK) */
+    --background: 222 47% 5%;
+    --foreground: 213 31% 91%;
 
     --primary: 250 65% 65%;
     --primary-foreground: 213 31% 91%;
 
+    --muted-foreground: 220 9% 70%;
+    --secondary: 222 47% 10%;
+    --secondary-foreground: 213 31% 91%;
+
+    --card: 222 47% 8%;
     --border: 217 33% 20%;
+
+    /* Base gradient palette (DARK) */
+    --bg-start: #0b0a12;  /* top-left nearly black */
+    --bg-end:   #1a1130;  /* deep purple bottom-right */
+    --blob:     rgba(110, 64, 255, 0.35);
+
+    /* Cursor haze color (DARK) – deeper purple */
+    --haze:        rgba(147, 51, 234, 0.18);
+    --haze-mid:    rgba(147, 51, 234, 0.08);
+    --haze-fade:   rgba(147, 51, 234, 0.00);
   }
 
-  * {
-    @apply border-border;
-  }
+  * { @apply border-border; }
+  html { @apply scroll-smooth; }
 
-  html {
-    @apply scroll-smooth;
-  }
-
+  /* IMPORTANT: transparent so our background layer shows */
   body {
-    @apply bg-background text-foreground transition-colors duration-300;
+    color: hsl(var(--foreground));
+    background: transparent;
+    transition: color .3s ease;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
+/* -------------------------------
+   UTILITIES (yours)
+-------------------------------- */
 @utility container {
-  margin-inline: auto;
-  padding-inline: 2rem;
-
-  @media (width >= 640px) {
-    max-width: 640px;
-  }
-  @media (width >= 768px) {
-    max-width: 768px;
-  }
-  @media (width >= 1024px) {
-    max-width: 1024px;
-  }
-  @media (width >= 1280px) {
-    max-width: 1280px;
-  }
-  @media (width >= 1400px) {
-    max-width: 1400px;
-  }
+  margin-inline: auto; padding-inline: 2rem;
+  @media (width >= 640px) { max-width: 640px; }
+  @media (width >= 768px) { max-width: 768px; }
+  @media (width >= 1024px) { max-width: 1024px; }
+  @media (width >= 1280px) { max-width: 1280px; }
+  @media (width >= 1400px) { max-width: 1400px; }
 }
 
-@utility text-glow {
-  @apply relative;
-  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
-}
-
-@utility card-hover {
-  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
-}
-
+@utility text-glow { @apply relative; text-shadow: 0 0 10px rgba(167,139,250,.5); }
+@utility card-hover { @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg; }
 @utility gradient-border {
   @apply relative rounded-md;
   background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
-  background-clip: padding-box;
-  border: 1px solid transparent;
+  background-clip: padding-box; border: 1px solid transparent;
 }
-
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
-         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium
+         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,.5)]
          hover:scale-105 active:scale-95;
 }
+@utility star { @apply absolute rounded-full bg-white; box-shadow: 0 0 10px 2px rgba(255,255,255,.4); }
+@utility meteor { @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full; box-shadow: 0 0 10px 5px rgba(255,255,255,.3); }
 
-@utility star {
-  @apply absolute rounded-full bg-white;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+#root { max-width: 100%; margin: 0 auto; padding: 0; text-align: center; }
+
+/* -------------------------------
+   BACKGROUND + CURSOR PURPLE HAZE
+   (id="spotlight" is provided by <GradientBackground/>)
+-------------------------------- */
+/* Purple haze that follows the cursor, plus vignette blobs + base gradient */
+/* Cursor-follow purple haze + base gradient (no corner blobs) */
+#spotlight {
+  background-image:
+    radial-gradient(
+      circle at var(--spot-x, 50%) var(--spot-y, 50%),
+      var(--haze) 22%,
+      var(--haze-mid) 50%,
+      var(--haze-fade) 72%
+    ),
+    /* base background */
+    linear-gradient(160deg, var(--bg-start), var(--bg-end));
+  background-repeat: no-repeat;
+  transition: background-position 0.06s linear;
+  will-change: background;
+  isolation: isolate;
+  pointer-events: none;
 }
 
-@utility meteor {
-  @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
-}
 
-#root {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
+@media (prefers-reduced-motion: reduce){
+  #spotlight{
+    background-image:
+      radial-gradient(900px circle at 18% 12%, var(--blob), transparent 60%),
+      radial-gradient(900px circle at 85% 22%, var(--blob), transparent 60%),
+      linear-gradient(160deg, var(--bg-start), var(--bg-end));
+  }
 }

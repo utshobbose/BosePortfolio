@@ -1,6 +1,43 @@
+// import { Navbar } from "../components/Navbar";
+// import { ThemeToggle } from "../components/ThemeToggle";
+// // import StarBackground  from "@/components/StarBackground";
+// import { HeroSection } from "../components/HeroSection";
+// import { AboutSection } from "../components/AboutSection";
+// import { SkillsSection } from "../components/SkillsSection";
+// import { ProjectsSection } from "../components/ProjectsSection";
+// import { ContactSection } from "../components/ContactSection";
+// import { Footer } from "../components/Footer";
+// import GradientBackground from "../components/GradientBackground";
+// // import {} from "../components/GradientBackground";
+
+// export const Home = () => {
+//   return (
+//     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+//       {/* Theme Toggle */}
+//       <ThemeToggle />
+//       {/* Background Effects */}
+//       {/* <StarBackground /> */}
+//       {/* <ParticleRing/> */}
+//       <GradientBackground />
+//       {/* Navbar */}
+//       <Navbar />
+//       {/* Main Content */}
+//       <main>
+//         <HeroSection />
+//         <AboutSection />
+//         <SkillsSection />
+//         <ProjectsSection />
+//         <ContactSection />
+//       </main>
+
+//       {/* Footer */}
+//       <Footer />
+//     </div>
+//   );
+// };
+
 import { Navbar } from "../components/Navbar";
 import { ThemeToggle } from "../components/ThemeToggle";
-// import StarBackground  from "@/components/StarBackground";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
@@ -8,20 +45,17 @@ import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 import GradientBackground from "../components/GradientBackground";
-// import {} from "../components/GradientBackground";
 
 export const Home = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      {/* Theme Toggle */}
-      <ThemeToggle />
-      {/* Background Effects */}
-      {/* <StarBackground /> */}
-      {/* <ParticleRing/> */}
+    <div className="min-h-screen text-foreground overflow-x-hidden bg-transparent">
+      {/* Background (purple haze + vignette) */}
       <GradientBackground />
-      {/* Navbar */}
+
+      {/* UI */}
+      <ThemeToggle />
       <Navbar />
-      {/* Main Content */}
+
       <main>
         <HeroSection />
         <AboutSection />
@@ -30,7 +64,6 @@ export const Home = () => {
         <ContactSection />
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   );
