@@ -8,10 +8,8 @@ import {
   SiNodedotjs,
   SiMongodb,
   SiDocker,
-  SiKotlin,
   SiTailwindcss,
   SiExpress,
-  SiVuedotjs,
   SiDjango,
   SiMysql
 } from "react-icons/si";
