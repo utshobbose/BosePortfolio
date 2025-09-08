@@ -9,7 +9,7 @@ export const HeroSection = () => {
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
         <img
-          src="/images/ex1.jpg"
+          src="/images/portfolio.jpg"
           alt="Utshob Bose"
           className="w-48 h-48 rounded-full mx-auto border-4 shadow-lg object-cover opacity-0 animate-fade-in"
         />
