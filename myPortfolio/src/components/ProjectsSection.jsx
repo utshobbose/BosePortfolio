@@ -1,5 +1,16 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
+  // {
+  //   id: 4,
+  //   title: "PetCare Management System",
+  //   description:
+  //     "PetCare Management System is a comprehensive solution for managing pet care services, including appointments, medical records, and billing. The platform connects pet owners with veterinarians and service providers, ensuring the best care for pets.",
+  //   image: "/projects/project_4.png",
+  //   tags: ["HTML5", "CSS", "React", "MongoDB", "ExpressJs"],
+  //   demoUrl: "https://cse471-pet-care-deploy.vercel.app/",
+  //   githubUrl: "https://github.com/utshobbose/Cse471_PetCare_Management",
+  // }
+
 const projects = [
     {
     id: 1,
@@ -30,16 +41,6 @@ const projects = [
     tags: ["HTML5", "CSS", "PHP", "MySQL"],
     demoUrl: "#",
     githubUrl: "https://github.com/utshobbose/Throttler",
-  },
-  {
-    id: 4,
-    title: "PetCare Management System",
-    description:
-      "PetCare Management System is a comprehensive solution for managing pet care services, including appointments, medical records, and billing. The platform connects pet owners with veterinarians and service providers, ensuring the best care for pets.",
-    image: "/projects/project_4.png",
-    tags: ["HTML5", "CSS", "React", "MongoDB", "ExpressJs"],
-    demoUrl: "https://cse471-pet-care-deploy.vercel.app/",
-    githubUrl: "https://github.com/utshobbose/Cse471_PetCare_Management",
   }
 ];
 
