@@ -9,6 +9,7 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
   //   tags: ["HTML5", "CSS", "React", "MongoDB", "ExpressJs"],
   //   demoUrl: "https://cse471-pet-care-deploy.vercel.app/",
   //   githubUrl: "https://github.com/utshobbose/Cse471_PetCare_Management",
+  //   demoUrl: "#",
   // }
 
 const projects = [
@@ -39,7 +40,6 @@ const projects = [
       "Throttler merges premium bike shopping with expert on-demand mechanic services, delivering repairs and maintenance to your doorstep. Schedule effortlessly, enjoy transparent pricing, and elevate your ride with seamless convenience. Ride smarter, ride smoother.",
     image: "/projects/project3.png",
     tags: ["HTML5", "CSS", "PHP", "MySQL"],
-    demoUrl: "#",
     githubUrl: "https://github.com/utshobbose/Throttler",
   }
 ];
