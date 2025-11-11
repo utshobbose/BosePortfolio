@@ -56,7 +56,7 @@ const projects = [
     title: "MiniVSFS",
     description:
       "MiniVSFS is a simple, custom-built virtual file system (VFS) designed to emulate file system operations with basic features such as inode management, file allocation, and directory handling. This project demonstrates creating and managing a file system image using basic operations such as creating the image, adding files, and displaying basic file system information.",
-    image: "",
+    image: "/projects/project5.png",
     tags: ["C", "Shell", "GCC", "Ubuntu"],
     githubUrl: "https://github.com/utshobbose/MiniVSFS",
   }
