@@ -41,6 +41,24 @@ const projects = [
     image: "/projects/project3.png",
     tags: ["HTML5", "CSS", "PHP", "MySQL"],
     githubUrl: "https://github.com/utshobbose/Throttler",
+  },
+    {
+    id: 4,
+    title: "SmartResume_Analyzer",
+    description:
+      "SmartResume_Analyzer is an AI-powered tool designed to help job seekers optimize their resumes. By analyzing job descriptions and providing tailored suggestions, it enhances the chances of landing interviews.",
+    image: "",
+    tags: ["Svelte", "Tailwind CSS", "Express.js", "Node.js"],
+    githubUrl: "https://github.com/utshobbose/SmartResume_Analyzer",
+  },
+    {
+    id: 5,
+    title: "MiniVSFS",
+    description:
+      "MiniVSFS is a simple, custom-built virtual file system (VFS) designed to emulate file system operations with basic features such as inode management, file allocation, and directory handling. This project demonstrates creating and managing a file system image using basic operations such as creating the image, adding files, and displaying basic file system information.",
+    image: "",
+    tags: ["C", "Shell", "GCC", "Ubuntu"],
+    githubUrl: "https://github.com/utshobbose/MiniVSFS",
   }
 ];
 
