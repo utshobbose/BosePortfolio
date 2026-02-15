@@ -17,7 +17,7 @@ const projects = [
     id: 1,
     title: "HollowInk ",
     description: "HollowInk is my space to explore that darkness — one story at a time. If you enjoy atmospheric horror, folklore-driven narratives, and the quiet dread of things that lurk just beyond what we choose to see, you're in the right place.",
-    image: "/projects/project1.png",
+    image: "/projects/Project_1.png",
     tags: ["React", "Tailwind CSS"],
     demoUrl: "https://hollow-link.vercel.app",
     githubUrl: "https://github.com/utshobbose/HollowInk",
