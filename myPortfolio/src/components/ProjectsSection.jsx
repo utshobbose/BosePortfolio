@@ -48,7 +48,7 @@ const projects = [
     description:
       "SmartResume_Analyzer is an AI-powered tool designed to help job seekers optimize their resumes. By analyzing job descriptions and providing tailored suggestions, it enhances the chances of landing interviews.",
       image: "/projects/project4.png",
-    tags: ["Svelte", "Tailwind CSS", "Express.js", "Node.js"],
+    tags: ["Svelte-kit", "Tailwind CSS", "Express.js", "Node.js"],
     githubUrl: "https://github.com/utshobbose/SmartResume_Analyzer",
   },
     {
@@ -59,6 +59,24 @@ const projects = [
     image: "/projects/project5.png",
     tags: ["C", "Shell", "GCC", "Ubuntu"],
     githubUrl: "https://github.com/utshobbose/MiniVSFS",
+  }, 
+    {
+    id: 6,
+    title: "Bengali Empathy Fine-Tuned LLaMA 3.1-8B",
+    description:
+      "Bengali Empathy Fine-Tuned LLaMA 3.1-8B is a specialized language model fine-tuned for understanding and generating empathetic responses in Bengali. It leverages the LLaMA 3.1-8B architecture to provide nuanced, culturally relevant interactions.",
+    image: "/projects/project6.png",
+    tags: ["Python", "LLaMA", "Fine-Tuning", "Bengali", " QLoRA"],
+    githubUrl: "https://github.com/utshobbose/Bengali_Empathy_Fine-Tuned_LLaMA_3.1-8B",
+  },
+    {
+    id: 7,
+    title: "Academic Stress Level Classification",
+    description:
+      "Predicting student stress using supervised learning — KNN, Decision Tree, Gradient Boosting & Neural Networks with advanced feature engineering & class balancing.",
+    image: "/projects/project7.png",
+    tags: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+    githubUrl: "https://github.com/utshobbose/Academic-Stress-Level-Classification",
   }
 ];
 
