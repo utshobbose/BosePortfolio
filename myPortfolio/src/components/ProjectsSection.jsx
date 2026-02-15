@@ -15,12 +15,12 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
     {
     id: 1,
-    title: "FitTrack ",
-    description: "FitTrack is a full-featured fitness and wellness web application with AI suggestions designed to help users achieve their health goals through personalized plans, intuitive tools, and expert recommendations.",
+    title: "HollowInk ",
+    description: "HollowInk is my space to explore that darkness — one story at a time. If you enjoy atmospheric horror, folklore-driven narratives, and the quiet dread of things that lurk just beyond what we choose to see, you're in the right place.",
     image: "/projects/project1.png",
-    tags: ["React", "Express", "MongoDB"],
-    demoUrl: "https://fit-track-iota-seven.vercel.app/",
-    githubUrl: "https://github.com/utshobbose/FitTrack",
+    tags: ["React", "Tailwind CSS"],
+    demoUrl: "https://hollow-link.vercel.app",
+    githubUrl: "https://github.com/utshobbose/HollowInk",
   },
 
   {
