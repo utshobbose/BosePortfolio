@@ -67,7 +67,7 @@ const projects = [
       "Bengali Empathy Fine-Tuned LLaMA 3.1-8B is a specialized language model fine-tuned for understanding and generating empathetic responses in Bengali. It leverages the LLaMA 3.1-8B architecture to provide nuanced, culturally relevant interactions.",
     image: "/projects/project6.png",
     tags: ["Python", "LLaMA", "Fine-Tuning", "Bengali", " QLoRA"],
-    githubUrl: "https://github.com/utshobbose/Bengali_Empathy_Fine-Tuned_LLaMA_3.1-8B",
+    githubUrl: "https://github.com/utshobbose/bengali-empathy-llama",
   },
     {
     id: 7,
@@ -76,7 +76,7 @@ const projects = [
       "Predicting student stress using supervised learning — KNN, Decision Tree, Gradient Boosting & Neural Networks with advanced feature engineering & class balancing.",
     image: "/projects/project7.png",
     tags: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
-    githubUrl: "https://github.com/utshobbose/Academic-Stress-Level-Classification",
+    githubUrl: "https://github.com/utshobbose/Academic-Stress-Level-Classification-System",
   }
 ];
 
