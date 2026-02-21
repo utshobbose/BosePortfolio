@@ -26,7 +26,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-Full-stack engineer specializing in high-performance MERN web applications, built with modern front-end frameworks and backed by scalable backend systems and clean database architecture. Strong in SDLC and agile delivery, shipping end-to-end solutions from responsive UI to secure APIs and data-driven features.
+Full-stack engineer specializing in high-performance MERN web applications, built with modern front-end frameworks and backed by scalable backend systems and clean database architecture. Passionate about the full SDLC and agile delivery, with hands-on experience shipping end-to-end solutions — from responsive UI to secure APIs and data-driven features.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
