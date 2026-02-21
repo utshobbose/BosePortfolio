@@ -15,7 +15,7 @@ export const Home = () => {
       <GradientBackground />
 
       {/* UI */}
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
       <Navbar />
 
       <main>
