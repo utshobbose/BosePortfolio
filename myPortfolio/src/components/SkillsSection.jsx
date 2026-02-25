@@ -17,6 +17,7 @@ import {
   SiScikitlearn,
   SiSpacy,
   SiFigma,
+  SiSupabase
 } from "react-icons/si";
 import { useAnimate } from "framer-motion";
 
@@ -67,12 +68,13 @@ const ClipPathLinks = () => {
         <LinkBox Icon={SiPytorch} href="#" />
       </div>
       
-      {/* Row 4: ML Frameworks (4 items) */}
-      <div className="grid grid-cols-4 divide-x divide-blue-300 animate-glow border">
+      {/* Row 4: ML Frameworks (5 items) */}
+      <div className="grid grid-cols-4 divide-x divide-blue-300 animate-glow border rounded-b-lg">
         <LinkBox Icon={SiTensorflow} href="#" />
         <LinkBox Icon={SiScikitlearn} href="#" />
         <LinkBox Icon={SiSpacy} href="#" />
-        <LinkBox Icon={HuggingFaceIcon} href="#" />
+        <LinkBox Icon={SiSupabase} href="#" />
+        {/* <LinkBox Icon={HuggingFaceIcon} href="#" /> */}
       </div>
     </div>
   );
