@@ -47,9 +47,9 @@ const projects = [
     title: "SmartResume_Analyzer",
     description:
       "SmartResume_Analyzer is an AI-powered tool designed to help job seekers optimize their resumes. By analyzing job descriptions and providing tailored suggestions, it enhances the chances of landing interviews.",
-      image: "/projects/project4.png",
-    tags: ["Svelte-kit", "Tailwind CSS", "Express.js", "Node.js"],
-    githubUrl: "https://github.com/utshobbose/SmartResume_Analyzer",
+      image: "/projects/SmartAnalyzer.png",
+    tags: ["React", "Tailwind CSS", "Express.js", "Node.js", "Python", "Typescript"],
+    githubUrl: "https://github.com/utshobbose/SmartAnalyzer",
   },
     {
     id: 5,
